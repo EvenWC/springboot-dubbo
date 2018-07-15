@@ -1,0 +1,11 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.evan.study.mapper.UserMapper">
+
+    <select id="getOneById" parameterType="java.lang.Long" resultType="User">
+        select id,user_name as userName,gender as gender,age as age from t_user where id=#{id}
+    </select>
+
+
+</mapper>
